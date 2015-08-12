@@ -25,7 +25,7 @@
 - (void)setTouchPoint:(CGPoint)touchPoint
 {
     _touchPoint = touchPoint;
-    
+
     self.center = CGPointMake(touchPoint.x,self.isSmall ?touchPoint.y -50 : touchPoint.y);
     [self setNeedsDisplay];
 }
